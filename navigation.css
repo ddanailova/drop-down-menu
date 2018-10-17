@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-
-.main-nav > ul {
-    display: flex;
-}
-
 .main-nav li {
     list-style: none outside;
     display: block;
@@ -21,14 +16,29 @@
 }
 
 .main-nav ul ul {
+    opacity: 0;
+    pointer-events: none;
     width: 15rem;
-    display: none;
-}
-/* .main-nav  ul  li ul {
-    display: block;
     position: absolute;
-    left:inherit;
-    top: 100%; right:0; 
-} */
+    top: 100%; left:0; 
+    transform: translateY(1rem);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.main-nav > ul {
+    display: flex;
+}
+
+.main-nav li:hover > a,
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.main-nav li:hover > ul {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: inherit;
+
+}
 
 
