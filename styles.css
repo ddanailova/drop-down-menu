@@ -53,27 +53,70 @@ footer .social-media {
     display: flex;
 }
 
+
 footer .social-media li,
-footer .social-media li a{
+footer .social-media li a,
+footer .social-media li a .actions {
     display: block;
     width: 2rem;
     height: 2rem;
-    text-align: center;
+    background: white;
+    border-radius: 50%;
 }
 
-footer .social-media li{
+
+footer .social-media li a .actions {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    opacity: 0.5;
+    box-shadow: 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.7);
+}
+
+footer .social-media li {
     list-style: none;
     margin: 1rem;
-    background: white;
-    /* border-radius: 50%; */
+    position: relative;
+    box-shadow: 0 -0.5rem 0.5rem 0 rgb(0, 0, 0, 0.3) inset;
 }
 
 footer .social-media li a {
-    color:#000;
+    color: #000;
+    box-shadow: 0 0.5rem 0.5rem 0 rgb(0, 0, 0, 0.3) inset;
 }
 
 footer .social-media li i {
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-   }
+    position: absolute;
+    top: 25%;
+    left: 28%;
+}
+
+footer .social-media li a .actions {
+    position: absolute;
+    top: -11%;
+    left: -10%;
+}
+
+footer .social-media li a:focus .actions {
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.3);
+
+}
+
+footer .social-media li a:focus .fa-facebook-square{
+    color: rgb(59, 89, 152);
+}
+footer .social-media li a:focus .fa-twitter-square{
+    color: rgb(0, 172, 237);
+}
+
+
+footer .social-media li a:focus .fa-google-plus {
+    color: rgb(221, 75, 57);
+}
+
+footer .social-media li a:focus .fa-linkedin {
+    color: rgb(8, 126, 183);
+}
+footer .social-media li a:focus .fa-instagram{
+    color: rgb(90, 150, 188);
+}
