@@ -30,17 +30,12 @@ html {
 
 body {
     margin: 0;
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 100vh;
 }
 
-@media screen and (min-width: 800px) {
-    body {
-        padding: 2rem 3rem;
-    }
-}
 
 main {
     height: 80vh;
@@ -51,15 +46,22 @@ footer {
     height: 10vh;
     display: flex;
     align-items: center;
+    flex:1 0 100%;
 }
 
 .site-title {
     display: block;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     font-family: 'Righteous', Georgia, serif;
     margin: 0;
-    padding: 0;
+    padding-left: 1rem;
 }
+
+@media screen and (min-width: 800px){
+    .site-title { font-size:2rem; }
+    
+}
+
 
 .site-title a {
     text-decoration: none;

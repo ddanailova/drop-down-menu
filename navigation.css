@@ -1,6 +1,13 @@
 .main-nav{
-    padding-left: 3rem;
+    padding-left: 2rem;
     flex:1 0 auto;
+}
+
+@media screen and (min-width: 800px){
+    .main-nav{
+        padding-left: 3rem;
+    }
+    
 }
 
 .main-nav ul {
